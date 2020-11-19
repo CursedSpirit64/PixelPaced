@@ -5,14 +5,14 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 10.0f;
-    private Rigidbody rb;
+    private Rigidbody2D rb;
     public Vector2 movement;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = this.GetComponent<Rigidbody>();
+        rb = this.GetComponent<Rigidbody2D>();
 
     }
     void Update()
@@ -26,6 +26,6 @@ public class PlayerController : MonoBehaviour
     }
     void moveCharacter(Vector2 direction)
     {
-        rb.AddForce(direction * speed);  
+        rb.AddForce(direction * speed);
     }
 }
