@@ -26,6 +26,6 @@ public class PlayerController : MonoBehaviour
     }
     void moveCharacter(Vector2 direction)
     {
-        rb.AddForce(direct * speed);  
+        rb.AddForce(direction * speed);  
     }
 }
