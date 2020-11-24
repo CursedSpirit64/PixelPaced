@@ -30,7 +30,7 @@ public class GolemBehavior : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D trig)
     {
-        if (trig.GameObject.CompareTag("turn"))
+        if (trig.gameObject.CompareTag("turn"))
         {
             if(MoveRight)
             {
