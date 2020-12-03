@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeadlyWater : MonoBehaviour
 {
@@ -30,6 +31,6 @@ public class DeadlyWater : MonoBehaviour
 
     public void Die()
     {
-        
+        SceneManager.LoadScene(PixelPaced);
     }
 }
