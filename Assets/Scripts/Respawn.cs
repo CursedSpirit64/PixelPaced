@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Respawn : MonoBehaviour
 {
-    [SerializeField] private Transform player;
-    [SerializeField] private Transform respawnPoint;
-
+    //[SerializeField] private Transform player;
+    //[SerializeField] private Transform respawnPoint;
+    public Vector2 spawnPoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +21,10 @@ public class Respawn : MonoBehaviour
 
     void OnTriggerEnter (Collider other)
     {
-        player.transform.position = respawnPoint.transform.position;
+        //player.transform.position = respawnPoint.transform.position;
+    if (other.gameObject.tag == "Enemy")
+        {
+            transform.position = spawnPoint;
+        }
     }
 }
