@@ -7,6 +7,7 @@ TagManager:
   - Powerup
   - turn
   - Enemy
+  - respawnPoint
   layers:
   - Default
   - TransparentFX
