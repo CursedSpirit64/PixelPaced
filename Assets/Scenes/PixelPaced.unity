@@ -232,6 +232,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3554865596832055262, guid: 2d3fcecd1b908664ba83e350fbc0e159,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d3fcecd1b908664ba83e350fbc0e159, type: 3}
 --- !u!1 &427154722 stripped
@@ -768,6 +773,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tree (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3554865596832055262, guid: 2d3fcecd1b908664ba83e350fbc0e159,
+        type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3554865596832055262, guid: 2d3fcecd1b908664ba83e350fbc0e159,
+        type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3554865596832055262, guid: 2d3fcecd1b908664ba83e350fbc0e159,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d3fcecd1b908664ba83e350fbc0e159, type: 3}
@@ -1397,6 +1417,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 3554865596832055262, guid: 2d3fcecd1b908664ba83e350fbc0e159,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d3fcecd1b908664ba83e350fbc0e159, type: 3}
