@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public Vector2 jumpHeight;
 
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,5 +47,4 @@ public class PlayerController : MonoBehaviour
     {
         isOnGround = true;
     }
-
 }
