@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     public Vector2 movement;
     public bool isOnGround = true;
+    public float playerSpeed; 
+    public Vector2 jumpHeight;
 
 
     // Start is called before the first frame update
@@ -21,8 +23,13 @@ public class PlayerController : MonoBehaviour
         movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 
         if (Input.GetKeyDown(KeyCode.W) && isOnGround)
+         {
+           isOnGround = false;
+         }
+
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.W))  //makes player jump
         {
-            isOnGround = false;
+            GetComponent<Rigidbody2D>().AddForce(jumpHeight, ForceMode2D.Impulse);
         }
     }
     // Update is called once per frame
@@ -39,4 +46,5 @@ public class PlayerController : MonoBehaviour
     {
         isOnGround = true;
     }
+
 }

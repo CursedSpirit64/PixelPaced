@@ -245,7 +245,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7930586502414025381}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &427154728
+--- !u!114 &427154723
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -254,9 +254,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 427154722}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2223edcd4c1f6ec45b7249a36242dade, type: 3}
+  m_Script: {fileID: 11500000, guid: 558941f7ec96f4d48856bdb94a497a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 14
+  movement: {x: 0, y: 0}
+  isOnGround: 1
+  playerSpeed: 5
+  jumpHeight: {x: 0, y: 5}
 --- !u!1 &527454043 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2669729604832215873, guid: 05f14054e4a53e54183c96d1e05dd8e3,
@@ -879,7 +884,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.5}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -890,7 +895,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.57, y: 2.56}
+  m_Size: {x: 1.8, y: 1.6}
   m_EdgeRadius: 0
 --- !u!1 &854458896 stripped
 GameObject:
@@ -1497,5 +1502,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7930586502610626900, guid: 98a3ce60775a6b04ba4bc0b4718bc721, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 98a3ce60775a6b04ba4bc0b4718bc721, type: 3}
