@@ -8,6 +8,7 @@ TagManager:
   - turn
   - Enemy
   - respawnPoint
+  - Goal
   layers:
   - Default
   - TransparentFX
