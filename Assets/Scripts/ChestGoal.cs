@@ -5,23 +5,11 @@ using UnityEngine.UI;
 
 public class ChestGoal : MonoBehaviour
 {
-    public Text winText;
-    private bool FinishPlane = false;
-
-    // Use this for initialization
-    void Start()
+    OnTriggerEnter(Collider other)
     {
-        FinishPlane = false;
-
-    }
-
-    void OnTriggerEnter(Collider col)
-    {
-        if (col.tag == "Player")
+        if (other.tag == "Player")
         {
-            FinishPlane = true;
-            winText.text = "You Win!";
-
+            Application.LoadLevel("PixelPaced");
         }
     }
 }
