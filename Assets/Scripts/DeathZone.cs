@@ -21,6 +21,7 @@ public class DeathZone : MonoBehaviour
         if (collision.tag == "Player")
         {
             Destroy(collision.gameObject);
+
         }
 
         if (collision.tag == "Enemy")

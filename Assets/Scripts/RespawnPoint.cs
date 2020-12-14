@@ -9,7 +9,8 @@ public class RespawnPoint : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Player.transform.position = respawnPoint.transform.position;
+        //Player.transform.position = respawnPoint.transform.position;
+        Instantiate(hoard, new Vector2(other.transform.position.x, other.transform.position.y), Quaternion.identity);
     }
 
     // Start is called before the first frame update
