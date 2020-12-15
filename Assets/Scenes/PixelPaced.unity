@@ -2629,6 +2629,7 @@ GameObject:
   - component: {fileID: 1096074479}
   - component: {fileID: 1096074482}
   - component: {fileID: 1096074483}
+  - component: {fileID: 1096074484}
   m_Layer: 0
   m_Name: turn
   m_TagString: turn
@@ -2753,6 +2754,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.15, y: 4.55}
+  m_EdgeRadius: 0
+--- !u!61 &1096074484
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096074478}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 26.85, y: 2.35}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.11, y: 0.9}
   m_EdgeRadius: 0
 --- !u!1001 &1220971389
 PrefabInstance:
@@ -3352,6 +3379,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Golem (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669729604832215873, guid: 05f14054e4a53e54183c96d1e05dd8e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 6751429591586835635, guid: 05f14054e4a53e54183c96d1e05dd8e3,
         type: 3}
