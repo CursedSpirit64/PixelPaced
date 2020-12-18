@@ -7,3 +7,5 @@ A prototype of a further developement
 Additions: Enemy movement, powerup icon, goal icon, tile palette completed, player movement script half finished, water created, Death Zone added for player. 
 <br>12.5.20-12.11.20<br>
 Additions: New terrain, prefabs created, enhacned jump, background inproved, goal almost finished.
+<br> 12.13.20-12.18.20<br>
+Additions: New Terrain, moved deathzones, colliders, etc, camera follows player, Map edit.
